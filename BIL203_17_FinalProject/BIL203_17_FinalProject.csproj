@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnaGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaGiris.Designer.cs">
+      <DependentUpon>AnaGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationApp\BussinessApp.cs" />
     <Compile Include="Class\IStock.cs" />
     <Compile Include="Class\Stock.cs" />
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaGiris.resx">
+      <DependentUpon>AnaGiris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

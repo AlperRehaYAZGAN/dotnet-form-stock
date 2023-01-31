@@ -8,5 +8,17 @@ namespace BIL203_17_FinalProject.Application
 {
     internal class BussinessApp
     {
+
+        public bool StokAdetKontrolEt(int adet)
+        {
+            if (adet > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

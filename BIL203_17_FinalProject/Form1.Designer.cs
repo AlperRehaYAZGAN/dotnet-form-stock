@@ -151,7 +151,7 @@
             // 
             // btngoruntule
             // 
-            this.btngoruntule.Location = new System.Drawing.Point(26, 319);
+            this.btngoruntule.Location = new System.Drawing.Point(337, 318);
             this.btngoruntule.Name = "btngoruntule";
             this.btngoruntule.Size = new System.Drawing.Size(94, 43);
             this.btngoruntule.TabIndex = 13;
@@ -161,17 +161,17 @@
             // 
             // btnkaydet
             // 
-            this.btnkaydet.Location = new System.Drawing.Point(126, 319);
+            this.btnkaydet.Location = new System.Drawing.Point(28, 318);
             this.btnkaydet.Name = "btnkaydet";
             this.btnkaydet.Size = new System.Drawing.Size(94, 43);
             this.btnkaydet.TabIndex = 14;
-            this.btnkaydet.Text = "Kaydet";
+            this.btnkaydet.Text = "Yeni Oluştur";
             this.btnkaydet.UseVisualStyleBackColor = true;
             this.btnkaydet.Click += new System.EventHandler(this.btnkaydet_Click);
             // 
             // btnsil
             // 
-            this.btnsil.Location = new System.Drawing.Point(226, 319);
+            this.btnsil.Location = new System.Drawing.Point(237, 318);
             this.btnsil.Name = "btnsil";
             this.btnsil.Size = new System.Drawing.Size(94, 43);
             this.btnsil.TabIndex = 15;
@@ -181,11 +181,11 @@
             // 
             // btnduzelt
             // 
-            this.btnduzelt.Location = new System.Drawing.Point(326, 319);
+            this.btnduzelt.Location = new System.Drawing.Point(128, 318);
             this.btnduzelt.Name = "btnduzelt";
             this.btnduzelt.Size = new System.Drawing.Size(94, 43);
             this.btnduzelt.TabIndex = 16;
-            this.btnduzelt.Text = "Düzelt";
+            this.btnduzelt.Text = "Güncelle";
             this.btnduzelt.UseVisualStyleBackColor = true;
             this.btnduzelt.Click += new System.EventHandler(this.btnduzelt_Click);
             // 
@@ -263,7 +263,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
-            this.Text = "BIL_17";
+            this.Text = "Stok Sayfası";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

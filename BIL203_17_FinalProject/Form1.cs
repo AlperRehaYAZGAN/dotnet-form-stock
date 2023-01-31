@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using BIL203_17_FinalProject.Application;
 
 namespace BIL203_17_FinalProject
 {
     public partial class Form1 : Form
     {
         Data.Data data;
+        BussinessApp bussinessApp = new BussinessApp();
 
         public Form1()
         {
@@ -48,6 +49,13 @@ namespace BIL203_17_FinalProject
             stock.AlisTarihi = dtAlisTarihi.Value;
             // cbSGKDurum is enum "Var" "Yok" so we can use form combo box index to get enum value
             stock.SGKDurum = (Class.SGKDurum)cbSgkDurum.SelectedIndex;
+
+            // stock sayisini doğrula
+            if (bussinessApp.StokAdetKontrolEt(stock.StokAdedi) == false)
+            {
+                MessageBox.Show("Stok sayısı 0'dan küçük olamaz.");
+                return;
+            }
 
             // show prompt to "Id @id ve Name: @name verisini oluşturmak istediğinize emin misiniz?"
             var result = MessageBox.Show("Name: " + stock.Marka + " verisini oluşturmak istediğinize emin misiniz?", "Onay", MessageBoxButtons.YesNo);
@@ -160,6 +168,13 @@ namespace BIL203_17_FinalProject
             stock.AlisTarihi = dtAlisTarihi.Value;
             // cbSGKDurum is enum "Var" "Yok" so we can use form combo box index to get enum value
             stock.SGKDurum = (Class.SGKDurum)cbSgkDurum.SelectedIndex;
+
+            // stock sayisini doğrula
+            if (bussinessApp.StokAdetKontrolEt(stock.StokAdedi) == false)
+            {
+                MessageBox.Show("Stok sayısı 0'dan küçük olamaz.");
+                return;
+            }
 
             data.UpdateStock(stock);
 
